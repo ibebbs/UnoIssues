@@ -11,10 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnoIssues.iOS", "UnoIssues\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnoIssues.UWP", "UnoIssues\UnoIssues.UWP\UnoIssues.UWP.csproj", "{EB89D750-649A-4954-A2EF-67977CA933DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnoIssues.Wasm", "UnoIssues\UnoIssues.Wasm\UnoIssues.Wasm.csproj", "{CAAE274A-F648-4628-A598-2FF7FD979DB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnoIssues.Wasm", "UnoIssues\UnoIssues.Wasm\UnoIssues.Wasm.csproj", "{CAAE274A-F648-4628-A598-2FF7FD979DB7}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UnoIssues\UnoIssues.Shared\UnoIssues.Shared.projitems*{19b36f33-4c70-4996-989d-7278d01f4f5c}*SharedItemsImports = 4
 		UnoIssues\UnoIssues.Shared\UnoIssues.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
 		UnoIssues\UnoIssues.Shared\UnoIssues.Shared.projitems*{df21ad26-abf1-43ef-8155-f6bb51da5cd6}*SharedItemsImports = 4
 		UnoIssues\UnoIssues.Shared\UnoIssues.Shared.projitems*{eb89d750-649a-4954-a2ef-67977ca933db}*SharedItemsImports = 4

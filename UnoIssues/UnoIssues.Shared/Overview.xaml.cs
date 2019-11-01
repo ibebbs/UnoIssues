@@ -25,6 +25,8 @@ namespace UnoIssues
 
         public IEnumerable<string> PlatformsAffected { get; set; }
 
+        public IEnumerable<string> PackagesAffected { get; set; }
+
         public string Page { get; set; }
 
         public string IssueUri { get; set; }
@@ -39,7 +41,19 @@ namespace UnoIssues
                 Name = "TappedRoutedEventArgs.GetPosition in WASM", 
                 Description = "TappedRoutedEventArgs.GetPosition works on most platforms but fails with a 'Specified method is not supported' on WASM",
                 PlatformsAffected = new [] { "WASM" },
-                Page = nameof(TappedRoutedEventArgsGetPosition) }
+                PackagesAffected = new [] { "Uno.UI 1.45.0" },
+                Page = nameof(TappedRoutedEventArgsGetPosition),
+                IssueUri = "https://github.com/unoplatform/uno/issues/2012"
+            },
+            new Issue
+            {
+                Name = "Popup not showing in WASM",
+                Description = "Popup works on most platforms but is not shown on WASM",
+                PlatformsAffected = new [] { "WASM" },
+                PackagesAffected = new [] { "Uno.UI 2.0.512-dev.3670" },
+                Page = nameof(PopupNotShowing),
+                IssueUri = ""
+            }
         };
 
         public IEnumerable<Issue> Items => AllItems;

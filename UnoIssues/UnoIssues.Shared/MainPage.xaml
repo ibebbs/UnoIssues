@@ -20,6 +20,11 @@
                         <FontIcon Glyph="&#xE783;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItem x:Name="PopupNotShowing" Tag="PopupNotShowing" Content="PopupNotShowing">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE783;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
 
             <Frame x:Name="contentFrame" Padding="12,0,12,24" IsTabStop="True"/>

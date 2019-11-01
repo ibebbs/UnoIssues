@@ -29,6 +29,7 @@ namespace UnoIssues
         {
             { "Overview", typeof(Overview) },
             { "TappedRoutedEventArgsGetPosition", typeof(TappedRoutedEventArgsGetPosition) },
+            { "PopupNotShowing", typeof(PopupNotShowing) },
         };
 
         public MainPage()

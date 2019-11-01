@@ -23,6 +23,7 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
@@ -47,8 +48,21 @@
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
-                        <TextBlock Grid.Row="3" Grid.Column="0" FontWeight="Bold" Text="Issue #:" />
-                        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding IssueUri}" />
+                        <TextBlock Grid.Row="3" Grid.Column="0" FontWeight="Bold" Text="Packages Affected:"/>
+                        <ItemsControl Grid.Row="3" Grid.Column="1" ItemsSource="{Binding PackagesAffected}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Margin="4,0" Text="{Binding}"/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        <TextBlock Grid.Row="4" Grid.Column="0" FontWeight="Bold" Text="Issue #:" />
+                        <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding IssueUri}" Margin="4" />
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
