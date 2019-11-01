@@ -34,9 +34,16 @@ namespace UnoIssues
         public MainPage()
         {
             this.InitializeComponent();
+
+            Navigator.Navigated += Navigator_Navigated;
         }
 
-        private void NagivateTo(string navItemTag, NavigationTransitionInfo transitionInfo)
+        private void Navigator_Navigated(object sender, NavigateEventArgs args)
+        {
+            NavigateTo(args.To, null);
+        }
+
+        private void NavigateTo(string navItemTag, NavigationTransitionInfo transitionInfo)
         {
             var item = _pages[navItemTag];
 
@@ -50,12 +57,12 @@ namespace UnoIssues
         private void NavigationView_Loaded(object sender, RoutedEventArgs e)
         {
             // Add handler for ContentFrame navigation.
-            NagivateTo("Overview", null);
+            NavigateTo("Overview", null);
         }
 
         private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
-            NagivateTo(args.SelectedItemContainer.Tag.ToString(), args.RecommendedNavigationTransitionInfo);
+            NavigateTo(args.SelectedItemContainer.Tag.ToString(), args.RecommendedNavigationTransitionInfo);
         }
     }
 }

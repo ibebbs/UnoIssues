@@ -57,5 +57,15 @@ namespace UnoIssues
 
             DataContext = new ViewModel();
         }
+
+        public void ListView_SelectionChanged(object sender, SelectionChangedEventArgs args)
+        {
+            var issue = args.AddedItems.OfType<Issue>().FirstOrDefault();
+
+            if (issue != null)
+            {
+                Navigator.Navigate(this, issue.Page);
+            }
+        }
     }
 }
