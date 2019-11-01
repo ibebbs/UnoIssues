@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="UnoIssues.TappedRoutedEventArgsGetPosition"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnoIssues.Shared"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.7*"/>
+            <ColumnDefinition Width="0.3*" MinWidth="100"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="4" TextWrapping="Wrap" Text="The blue area below is a Canvas. Clicking anywhere on it should result in the coordinates of the click being displayed in the textblock to the right. An 'Unsupported Exception' is thrown when this is run in WASM" />
+        <Border Grid.Row="0" Grid.Column="1" Background="LightPink">
+            <TextBlock x:Name="coordinates" Grid.Row="0" Grid.Column="1" Margin="4" TextWrapping="Wrap" Text="Click coordinates will be displayed here" />
+        </Border>
+        <Canvas Grid.Row="1" Grid.ColumnSpan="2" Margin="4" Background="LightBlue" Tapped="TappedEventHandler" />
+    </Grid>
+</Page>
