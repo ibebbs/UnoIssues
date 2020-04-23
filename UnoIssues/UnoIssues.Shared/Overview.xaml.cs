@@ -53,6 +53,15 @@ namespace UnoIssues
                 PackagesAffected = new [] { "Uno.UI 2.0.512-dev.3670" },
                 Page = nameof(PopupNotShowing),
                 IssueUri = ""
+            },
+            new Issue
+            {
+                Name = "Horizontal Paths incorrectly clipped",
+                Description = "Horizontal Path (and Line) instances are incorrectly clipped",
+                PlatformsAffected = new [] { "iOS" },
+                PackagesAffected = new [] { "Uno.UI 2.2" },
+                Page = nameof(StrokeNotVisibleOniOS),
+                IssueUri = ""
             }
         };
 

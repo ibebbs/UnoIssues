@@ -30,6 +30,7 @@ namespace UnoIssues
             { "Overview", typeof(Overview) },
             { "TappedRoutedEventArgsGetPosition", typeof(TappedRoutedEventArgsGetPosition) },
             { "PopupNotShowing", typeof(PopupNotShowing) },
+            { "StrokeNotAppearingOniOS", typeof(StrokeNotVisibleOniOS) },
         };
 
         public MainPage()

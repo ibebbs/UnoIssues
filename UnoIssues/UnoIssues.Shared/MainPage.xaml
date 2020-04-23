@@ -20,7 +20,12 @@
                         <FontIcon Glyph="&#xE783;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="PopupNotShowing" Tag="PopupNotShowing" Content="PopupNotShowing">
+                <NavigationViewItem x:Name="PopupNotShowing" Tag="PopupNotShowing" Content="Popup Not Showing">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE783;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="StrokeNotAppearingOniOS" Tag="StrokeNotAppearingOniOS" Content="Horizontal Path Clipping">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE783;"/>
                     </NavigationViewItem.Icon>

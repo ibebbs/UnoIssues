@@ -28,6 +28,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)PopupNotShowing.xaml.cs">
       <DependentUpon>PopupNotShowing.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)StrokeNotVisibleOniOS.xaml.cs">
+      <DependentUpon>$fileinputname$.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)TappedRoutedEventArgsGetPosition.xaml.cs">
       <DependentUpon>TappedRoutedEventArgsGetPosition.xaml</DependentUpon>
     </Compile>
@@ -42,6 +45,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)PopupNotShowing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)StrokeNotVisibleOniOS.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

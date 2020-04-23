@@ -9,7 +9,7 @@
 
     <Grid>
         <Button x:Name="ShowPopup" Content="Show Popup" Click="ShowPopup_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="4"/>
-        <Popup x:Name="ThePopup" IsLightDismissEnabled="True" VerticalOffset="4">
+        <Popup x:Name="ThePopup" IsLightDismissEnabled="True">
             <Border BorderBrush="Black" BorderThickness="1" Background="LightBlue" Width="100" Height="50">
                 <TextBlock Text="Hello!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Border>
